@@ -1,0 +1,26 @@
+.error {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.error img {
+  max-width: 700px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.error h5 {
+  margin-bottom: 20px;
+}
+.error button {
+  cursor: pointer;
+  padding: 15px 30px;
+  border: none;
+  background-color: #004c3f;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 900;
+  border-radius: 10px;
+}

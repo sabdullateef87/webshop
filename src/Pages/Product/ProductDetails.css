@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.product__details {
+  padding-top: 12vh;
+  padding-left: 10px;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  /* background: rgb(255, 255, 255, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); */
+}
+
+.product__details-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1em;
+  justify-content: space-between;
+}
+
+.product__details-container img {
+  max-width: 600px;
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+}
+
+.product__details-container .details {
+  max-width: 550px;
+  width: 100%;
+}
+.product__details-container .details h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.similar__products {
+  display: flex;
+  gap: 1em;
+  margin-top: 1em;
+  flex-wrap: wrap;
+}

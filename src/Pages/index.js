@@ -1,0 +1,10 @@
+export { default as LandingPage } from "../Pages/LandingPage/LandingPage";
+export { default as ErrorPage } from "../Pages/Error/Error";
+export { default as Login } from "../Auth/Login";
+export { default as Register } from "../Auth/Register";
+export { default as Cart } from "../Pages/Cart/Cart";
+export { default as Products } from "../Pages/Product/Products";
+export { default as About } from "../Pages/About/About";
+export { default as ProductDetails } from "../Pages/Product/ProductDetails";
+export { default as Category } from "../Pages/Category/Category";
+export { default as CreateProduct } from "../Pages/CreateProduct/CreateProduct";

@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.product__container {
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* @media screen and (max-width: 750px) {
+  .product__container {
+    width: 95%;
+  }
+} */
+.select {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.select__btn {
+  background-color: cadetblue;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+}
+.select__btn input {
+  margin-left: 10px;
+}
+
+.del__btn button {
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border: 1px solid red;
+  cursor: pointer;
+}

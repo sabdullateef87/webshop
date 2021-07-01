@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #004c3f;
+  clip-path: circle(50% at 90% 110%);
+  z-index: -1;
+}
+
+.circle2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #004c3f;
+  clip-path: circle(30% at 5% -30%);
+  z-index: -1;
+}
+.landingpage {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.landingpage__container {
+  width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+/* navbar style  */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 8vh;
+  flex-wrap: wrap;
+}
+
+.navbar ul {
+  list-style: none;
+}
+.navbar ul li {
+  display: inline-block;
+  padding: 0 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  text-transform: capitalize;
+  font-size: 14px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.navbar ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.navbar ul li:hover a {
+  color: #96bf43;
+}
+
+.navbar .logo {
+  font-family: "Lobster", cursive;
+  letter-spacing: 3px;
+  position: relative;
+  z-index: 2;
+  color: #96bf43;
+  font-size: 26px;
+}
+
+.btn__div {
+  /* width: 20%; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.register__btn {
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: #004c3f;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.icon__div {
+  display: none;
+  align-items: center;
+  position: relative;
+}
+.icon__div img {
+  position: absolute;
+}
+.icon__div .close {
+  display: none;
+}
+
+/* hero section style  */
+.hero {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 92vh;
+  flex-wrap: wrap;
+}
+.left__hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1 1 50%;
+  height: 400px;
+}
+
+.left__hero h1 {
+  text-align: left;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-size: 3.5vw;
+}
+.left__hero p {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.left__hero button {
+  padding: 20px 40px;
+  outline: none;
+  border: none;
+  justify-self: flex-start;
+  align-self: flex-start;
+  border-radius: 10px;
+  background-color: #004c3f;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+.right__hero {
+  flex: 1 1 50%;
+}
+
+.right__hero img {
+  width: 100%;
+}
+.register__btn--sm {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar ul {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #004c3f;
+    color: white;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all 0.5s ease;
+    opacity: 0.985;
+    align-items: center;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  .navbar .logo h2 {
+    width: 40%;
+    font-family: "Lobster", cursive;
+    letter-spacing: 3px;
+    z-index: 2;
+  }
+  .icon__div {
+    display: flex;
+  }
+
+  .circle {
+    clip-path: circle(0% at 30% 110%);
+    z-index: -1;
+  }
+  .circle2 {
+    clip-path: circle(50% at 5% -30%);
+    z-index: -1;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    padding: 40px 0;
+  }
+  .register__btn {
+    display: none;
+  }
+  .register__btn--sm {
+    border: 2px solid #004c3f;
+    color: black;
+    display: flex;
+    text-decoration: none;
+  }
+  .register__btn--sm a {
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    min-height: 70vh;
+    padding: 60px 0;
+  }
+  .left__hero {
+    /* display: block; */
+    margin-top: 20px;
+  }
+  .right__hero {
+    flex: inherit;
+  }
+}

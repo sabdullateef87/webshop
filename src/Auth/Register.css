@@ -1,0 +1,115 @@
+.register__container {
+  padding-top: 12vh;
+  height: 88vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-attachment: fixed; */
+  /* animation: loadCenter 1s ease;
+  transform-origin: center; */
+}
+.register__container ::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(../Images/pexels-andrew-neel-4134787.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(10px);
+}
+.register__right {
+  min-width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background: rgb(255, 255, 255, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.register__right img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6em;
+  width: 100%;
+}
+.form .formField {
+  padding: 10px;
+  background-color: #fff;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid #e8e8e8;
+}
+.form .formField input {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  font: 16px;
+  background-color: transparent;
+}
+
+.form button {
+  outline: 0;
+  border: 0;
+  width: 85%;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 15px;
+  text-transform: capitalize;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form .footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  width: 80%;
+}
+
+.fp,
+.no_acc {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+
+@keyframes loadCenter {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .register__container {
+    padding-top: 12vh;
+    height: 82vh;
+    transform-origin: center;
+    align-items: flex-start;
+    padding-top: 120px;
+  }
+  .register__right {
+    min-width: 70%;
+  }
+}

@@ -1,0 +1,60 @@
+.categories {
+  padding-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.categories form {
+  border: 2px solid #c4c4c4;
+  padding: 4px 10px;
+}
+.categories form input {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  height: 20px;
+}
+.categories form input:focus {
+  outline: none;
+  border: none;
+}
+.form__group button {
+  outline: 0;
+  border: none;
+  padding: 5px 20px;
+  margin-left: 10px;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+}
+.categories .category__list {
+  width: 40%;
+  margin-top: 40px;
+}
+
+.categories .category__list .category__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+.category__item p {
+  font-size: 20px;
+  color: #454545;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.categories .category__list .category__item button {
+  outline: 0;
+  border: none;
+  padding: 5px 20px;
+  margin-left: 10px;
+  color: white;
+  cursor: pointer;
+}
+.categories .category__list .category__item button:first-child {
+  background-color: grey;
+}
+.categories .category__list .category__item button:last-child {
+  background-color: red;
+}

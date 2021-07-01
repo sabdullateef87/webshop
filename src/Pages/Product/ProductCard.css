@@ -1,0 +1,77 @@
+.product__card {
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 0px 6px 0px rgba(46, 50, 50, 0.67);
+  -moz-box-shadow: 1px 0px 6px 0px rgba(46, 50, 50, 0.67);
+  box-shadow: 1px 0px 6px 0px rgba(46, 50, 50, 0.67);
+  max-width: 300px;
+}
+
+.product__card img {
+  max-width: 300px;
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+  margin-bottom: 1em;
+}
+.product__card .title {
+  margin-bottom: 0.5em;
+  white-space: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.product__card .price {
+  margin-bottom: 0.5em;
+  color: brown;
+}
+.product__card .desc {
+  margin-bottom: 1em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* line-height: 1.625; */
+  max-width: 300px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.product__card .content {
+  margin-bottom: 1em;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* line-height: 1.625; */
+  max-width: 300px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.product__card .sold {
+  margin-bottom: 0.5em;
+  color: #c4c4c4;
+  font-weight: 600;
+}
+.action__btns {
+  display: flex;
+  justify-content: space-between;
+}
+.action__btns button {
+  outline: none;
+  border: none;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+.action__btns button:nth-child(2) {
+  background-color: green;
+  opacity: 0.8;
+  color: #fff;
+  transition: all 0.8s ease-in-out;
+}
+.action__btns button:nth-child(2):hover {
+  opacity: 1;
+  transform: scale(0.9);
+}

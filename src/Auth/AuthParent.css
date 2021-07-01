@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+.auth {
+  min-height: 100vh;
+}
+.authParent__container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100%;
+  gap: 1em;
+  /* flex-direction: column; */
+}
+
+.authParent__showcase {
+  flex: 1 1 35%;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  animation: loadRight 1s ease 0.3s forwards;
+  transform: translateX(120%);
+  /* padding: 20px; */
+}
+.authParent__showcase h1 {
+  text-align: left;
+  width: 49vw;
+  margin-bottom: 20px;
+}
+
+.authParent__showcase p {
+  margin-bottom: 30px;
+}
+
+.authParent__showcase img {
+  width: 80%;
+}
+
+.authParent__showcase header {
+}
+
+@keyframes loadRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translate(0%);
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .authParent__showcase {
+    display: none;
+  }
+  .auth {
+    min-height: 90vh;
+  }
+}
